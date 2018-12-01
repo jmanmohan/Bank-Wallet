@@ -1,0 +1,36 @@
+//dropdown 
+Select drpcountry= new Select(wd.findElement(By.name("car... 
+Select drpcountry= new Select(wd.findElement(By.name("cars")));
+       drpcountry.selectByVisibleText("Volvo");
+      drpcountry.selectByIndex(2);
+       drpcountry.selectByValue("saab");
+        drpcountry.deselectAll();
+       */
+       
+       //radio
+       WebElement radioButton=wd.findElement(By.id("other"));
+       radioButton.click();
+      boolean a= radioButton.isDisplayed();
+      System.out.println(a);
+      boolean b= radioButton.isEnabled();
+      System.out.println(b);
+      boolean c= radioButton.isSelected();
+      System.out.println(c); 
+ 
+ 
+//checkbox
+      
+     /* WebElement checkboxes=wd.findElement(By.id("boat"));
+      radioButton.click();
+     boolean x= checkboxes.isDisplayed();
+     System.out.println(a);
+     boolean y= checkboxes.isEnabled();
+     System.out.println(b);
+     boolean z= checkboxes.isSelected();
+     System.out.println(c);*/
+       /*WebElement element=wd.findElement(By.className("gLFyf"));
+        element.sendKeys("hello");
+    WebElement web= wd.findElement(By.xpath("//*[@id=\"nav\"]/li[5]/a"));  
+    web.click();*/
+       
+ 
